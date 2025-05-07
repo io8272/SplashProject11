@@ -45,10 +45,10 @@ public class Activity3 extends AppCompatActivity {
     public void check(View v) {
         Intent intent = new Intent();
         if(isUserValid(id, password)) {
-            intent.putExtra("status", "로그인 성공");
+            intent.putExtra("status", "로그인성공");
         }
         else{
-            intent.putExtra("status", "로그인 실패");
+            intent.putExtra("status", "로그인실패");
         }
 
         setResult(RESULT_OK, intent);

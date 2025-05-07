@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,6 +26,7 @@ public class Activity2 extends AppCompatActivity {
     private EditText j_emailEditText, j_passwordEditText;
     private TextView j_statusText;
     private Button buttonlogin;
+    private Button j_btn_main;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +68,18 @@ public class Activity2 extends AppCompatActivity {
                     if(result.getResultCode()== Activity.RESULT_OK) {
                         Intent data = result.getData();
                         j_statusText.setText(data.getStringExtra("status"));
-                }
+                    }
+                    j_btn_main = findViewById(R.id.btn_main);
+                    if("로그인성공".equals(j_statusText.getText().toString())) {
+                        j_btn_main.setVisibility(View.VISIBLE);
+                    } else {
+                        j_btn_main.setVisibility(View.INVISIBLE);
+                    }
         });
+    }
+
+    public void onClicked_main(View view) {
+        Intent intent =new Intent(Activity2.this, Activity4.class);
+        startActivity(intent);
     }
 }

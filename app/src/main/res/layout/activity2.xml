@@ -117,6 +117,14 @@
             android:textAlignment="center"
             android:textColor="#F40404"
             android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/btn_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메인화면으로 이동"
+            android:visibility="invisible"
+            android:onClick="onClicked_main"/>
     </LinearLayout>
 
     <LinearLayout
