@@ -24,7 +24,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="340dp"
+            android:layout_height="343dp"
             android:layout_weight="1"
             android:src="@drawable/symbol_1" />
     </LinearLayout>
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:gravity="center"
@@ -49,7 +49,7 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:gravity="center"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/LoginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -86,8 +86,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="392dp"
-        android:layout_height="295dp"
+        android:layout_width="412dp"
+        android:layout_height="292dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,18 +96,27 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호를 잊으셨나요?"
+            android:textAlignment="center" />
+
+        <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="비밀번호를 잊으셨나요?" />
+            android:text="계정이 없으신가요?"
+            android:textAlignment="center" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/statusText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="로그인 진행 중"
             android:textAlignment="center"
-            android:text="계정이 없으신가요?" />
+            android:textColor="#F40404"
+            android:textSize="40dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -124,7 +133,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/EditText1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -132,7 +141,7 @@
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/EditText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
